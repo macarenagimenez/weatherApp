@@ -1,0 +1,31 @@
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 30%;
+  margin-top: 50px;
+}
+
+.city {
+  text-align: center;
+}
+
+.date {
+  text-align: center;
+}
+
+.description {
+  text-align: left;
+}
+.humidity-windy {
+  text-align: right;
+}
+.currentTemperature {
+  text-align: center;
+}
+
+.week-days {
+  text-align: center;
+  justify-content: center;
+}

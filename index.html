@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>😎 Weather App</title>
-    <!-- CSS only -->
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,51 +16,53 @@
   </head>
 
   <body>
-    <div class="conteiner">
-      <div class="header">
-        <h2>London |</h2>
-        <p>Monday 11:45</p>
+    <div class="container">
+      <div class="card">
+        <div class="header">
+          <h2 class="city">London |</h2>
+          <p class="date">Monday 11:45</p>
+        </div>
+        <div class="weather-description row">
+          <span class="col-6 description"> ☁ Clear</span>
+          <ul class="col-6 humidity-windy">
+            <li>Humidity: 10%</li>
+            <li>Wind speed: 20km/h</li>
+          </ul>
+        </div>
+        <hr />
+        <div class="currentTemperature">
+          <h1>23° C|F</h1>
+        </div>
+        <div class="forecast row">
+          <div class="week-days col">
+            <p>mon</p>
+            <p>☀</p>
+            <p>25°-15°</p>
+          </div>
+          <div class="week-days col">
+            <p>mon</p>
+            <p>☀</p>
+            <p>25°-15°</p>
+          </div>
+          <div class="week-days col">
+            <p>mon</p>
+            <p>☀</p>
+            <p>25°-15°</p>
+          </div>
+          <div class="week-days col">
+            <p>mon</p>
+            <p>☀</p>
+            <p>25°-15°</p>
+          </div>
+          <div class="week-days col">
+            <p>mon</p>
+            <p>☀</p>
+            <p>25°-15°</p>
+          </div>
+        </div>
       </div>
-      <div class="weather-description row">
-        <span class="col-6"> ☁ Clear</span>
-        <ul class="col-6">
-          <li>Humidity: 10%</li>
-          <li>Wind speed: 20km/h</li>
-        </ul>
-      </div>
-      <hr />
-      <div class="currentTemperature">
-        <h1>23° C|F</h1>
-      </div>
-      <div class="forecast row">
-        <div class="week-days col">
-          <p>mon</p>
-          <p>☀</p>
-          <p>25°-15°</p>
-        </div>
-        <div class="week-days col">
-          <p>mon</p>
-          <p>☀</p>
-          <p>25°-15°</p>
-        </div>
-        <div class="week-days col">
-          <p>mon</p>
-          <p>☀</p>
-          <p>25°-15°</p>
-        </div>
-        <div class="week-days col">
-          <p>mon</p>
-          <p>☀</p>
-          <p>25°-15°</p>
-        </div>
-        <div class="week-days col">
-          <p>mon</p>
-          <p>☀</p>
-          <p>25°-15°</p>
-        </div>
-      </div>
+      <p class="developer">Open-source by Macu Gimenez</p>
     </div>
-    <small>Open-source by Macu Gimenez</small>
   </body>
 
   <script src="src/app.js"></script>
