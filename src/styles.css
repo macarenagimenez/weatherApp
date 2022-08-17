@@ -1,31 +1,91 @@
 ul {
   list-style-type: none;
 }
-
-.container {
-  max-width: 30%;
-  margin-top: 50px;
+hr {
+  margin: 0;
+  border-top: 2px solid #707070;
 }
 
+.container {
+  max-width: 40%;
+  margin-top: 50px;
+  font-family: "Nunito", sans-serif;
+  color: #707070;
+}
+
+.card {
+  border-radius: 5px;
+  background-color: #f0f040;
+  padding: 20px;
+}
+.header {
+  border-radius: 5px 5px 40px 40px;
+  background-color: white;
+  padding: 30px;
+  transition: all 200ms ease-out;
+}
+.header:hover {
+  border: 1px solid #707070;
+  background: #707070;
+  color: white;
+  cursor: pointer;
+}
 .city {
   text-align: center;
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-size: 50px;
 }
 
 .date {
   text-align: center;
+  font-size: 15px;
 }
 
+.weather-description {
+  margin: 40px 5px 0px 5px;
+  position: relative;
+  font-weight: bolder;
+  padding: 30px;
+}
 .description {
   text-align: left;
+  font-size: 20px;
 }
 .humidity-windy {
   text-align: right;
+  font-size: 15px;
+  margin: 0;
+  letter-spacing: 3px;
 }
-.currentTemperature {
+.current-temperature {
   text-align: center;
+  padding: 50px;
+}
+
+.current-temperature h1 {
+  font-size: 80px;
+}
+
+.units {
+  font-size: 16px;
+  position: relative;
+  top: -44px;
 }
 
 .week-days {
   text-align: center;
-  justify-content: center;
+  border: 1px solid #707070;
+  border-radius: 20px;
+  padding-top: 10px;
+  margin: 10px;
+  font-size: 10px;
+  transition: all 200ms ease-out;
+}
+
+.week-days:hover {
+  border: 1px solid #707070;
+  background: #707070;
+  color: white;
+  cursor: pointer;
 }
