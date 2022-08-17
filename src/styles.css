@@ -5,6 +5,21 @@ hr {
   margin: 0;
   border-top: 2px solid #707070;
 }
+input {
+  border-radius: 5px 5px 40px 40px;
+  background-color: white;
+  padding: 60px;
+  transition: all 200ms ease-out;
+  margin: 0 auto;
+  width: 100%;
+  border: 0px;
+  text-align: center;
+  font-size: 50px;
+  color: #707070;
+}
+input:hover {
+  cursor: pointer;
+}
 
 .container {
   max-width: 40%;
@@ -18,18 +33,7 @@ hr {
   background-color: #f0f040;
   padding: 20px;
 }
-.header {
-  border-radius: 5px 5px 40px 40px;
-  background-color: white;
-  padding: 30px;
-  transition: all 200ms ease-out;
-}
-.header:hover {
-  border: 1px solid #707070;
-  background: #707070;
-  color: white;
-  cursor: pointer;
-}
+
 .city {
   text-align: center;
   margin-top: 40px;
@@ -40,6 +44,7 @@ hr {
 .date {
   text-align: center;
   font-size: 15px;
+  margin-top: 20px;
 }
 
 .weather-description {
@@ -69,8 +74,6 @@ hr {
 
 .units {
   font-size: 16px;
-  position: relative;
-  top: -44px;
 }
 
 .week-days {
@@ -88,4 +91,9 @@ hr {
   background: #707070;
   color: white;
   cursor: pointer;
+}
+
+.developer {
+  font-size: 10px;
+  margin-top: 10px;
 }

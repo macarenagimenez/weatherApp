@@ -23,14 +23,20 @@
       src="https://kit.fontawesome.com/c1c02b3758.js"
       crossorigin="anonymous"
     ></script>
-  </head>
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+ </head>
 
   <body>
     <div class="container">
       <div class="card">
         <div class="header">
-          <h2 class="city">London |</h2>
+          <form >
+            <input type="text" placeholder="London" >
+          <!--<h2 class="city">London |</h2>-->
+          
           <p class="date">Monday 11:45</p>
+          </form>
         </div>
         <div class="weather-description row">
           <span class="col-6 description position-absolute bottom-0 start-0">
@@ -43,9 +49,11 @@
         </div>
         <hr />
         <div class="current-temperature">
-          <h1>23°<span class="units"> C|F </span></h1>
+          <h1 id="valueTemp">23</h1>
+          <span class="units"> C | F </span>
         </div>
         <hr />
+        <!--
         <div class="forecast row">
           <div class="week-days col">
             <p>mon</p>
@@ -73,7 +81,7 @@
             <p>25°-15°</p>
           </div>
         </div>
-      </div>
+      </div>-->
       <p class="developer">Open-source by Macu Gimenez</p>
     </div>
   </body>
