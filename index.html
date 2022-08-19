@@ -32,26 +32,23 @@
       <div class="card">
         <div class="header">
           <form id="inputCity">
-            <input type="text" placeholder="Type your city!" id="valueCity" autofocus="on" autocomplete="off" >
+            <input type="type" placeholder="Type your city!" id="valueCity" autofocus="on" autocomplete="off"  >
           <p class="name" id="name"></p>
           <p class="date" id="date">Monday 11:45</p>
-          
-          </form>
+         </form>
         </div>
         <div class="weather-description row">
-          <div>
-           <img id="icon" src="http://openweathermap.org/img/wn/10d@2x.png" >
-           <span class="col-6 description position-absolute bottom-0 start-0" id="description"></span>
+          <div class="col-6 description position-absolute bottom-0 start-0">
+           <img  class="icon" id="icon" src="http://openweathermap.org/img/wn/10d@2x.png" >
+           <div  id="description"></div>
           </div>
-          <div>
-          <ul class="col-6 humidity-windy position-absolute bottom-0 end-0">
+          <div class="col-6 position-absolute bottom-0 end-0">
+          <ul class="humidity-windy ">
             <li><i class="fa-solid fa-wind"></i>:<span id="wind"></span>km/h</li>
             <li><i class="fa-solid fa-cloud-rain" ></i>: <span id="humidity"></span> </li>
           </ul>
         </div>
-        <div>
-          
-        </div>
+     
         </div>
         <hr />
         <div class="current-temperature">

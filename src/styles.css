@@ -48,9 +48,12 @@ input:focus-visible {
   border-radius: 40px;
   background-color: #f1f1f1;
   margin-top: 20px;
-  padd
+  padding: 60px;
 }
 
+.icon {
+  width: 80px;
+}
 .date {
   text-align: center;
   font-size: 15px;
@@ -64,11 +67,11 @@ input:focus-visible {
   padding: 30px;
 }
 .description {
-  text-align: left;
+  text-align: center;
   font-size: 20px;
 }
 .humidity-windy {
-  text-align: right;
+  text-align: center;
   font-size: 15px;
   margin: 0;
   letter-spacing: 3px;

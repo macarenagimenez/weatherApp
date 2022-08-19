@@ -11,8 +11,13 @@ function date() {
   ];
   let day = days[now.getDay()];
   let hours = now.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
   let minutes = now.getMinutes();
-
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   let currentTime = document.querySelector("#date");
 
   currentTime.innerHTML = `${day}, ${hours}:${minutes}hr.`;
@@ -28,6 +33,7 @@ function searchCity(event) {
   event.preventDefault();
   let city = document.querySelector("#valueCity").value;
   searchCityWeather(city);
+  document.querySelector("#valueCity").value = "";
 }
 
 function displayWeather(response) {
