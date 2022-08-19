@@ -6,19 +6,21 @@ hr {
   border-top: 2px solid #707070;
 }
 input {
-  border-radius: 5px 5px 40px 40px;
-  background-color: white;
-  padding: 60px;
+  border-radius: 40px;
+  background-color: #f1f1f1;
   transition: all 200ms ease-out;
   margin: 0 auto;
   width: 100%;
   border: 0px;
   text-align: center;
-  font-size: 50px;
+  font-size: 20px;
   color: #707070;
 }
 input:hover {
   cursor: pointer;
+}
+input:focus-visible {
+  outline-color: #f5e1da;
 }
 
 .container {
@@ -30,7 +32,7 @@ input:hover {
 
 .card {
   border-radius: 5px;
-  background-color: #f0f040;
+  background-color: #f5e1da;
   padding: 20px;
 }
 
@@ -38,7 +40,15 @@ input:hover {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 0;
-  font-size: 50px;
+  font-size: 30px;
+}
+.name {
+  text-align: center;
+  font-size: 30px;
+  border-radius: 40px;
+  background-color: #f1f1f1;
+  margin-top: 20px;
+  padd
 }
 
 .date {
@@ -102,4 +112,8 @@ input:hover {
   color: #707070;
   cursor: default;
   text-decoration: none;
+}
+
+a {
+  cursor: default;
 }

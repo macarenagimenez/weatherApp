@@ -36,12 +36,13 @@ function displayWeather(response) {
   let humidity = response.data.main.humidity;
   let wind = response.data.wind.speed;
   let icon = response.data.weather[0].icon;
+  let name = response.data.name;
+  console.log(name);
 
   celsiusTemperature = response.data.main.temp;
 
-  console.log(response);
-
   document.querySelector("#valueTemp").innerHTML = `${temperature}`;
+  document.querySelector("#name").innerHTML = `${name}`;
   document.querySelector("#description").innerHTML = `${description}`;
   document.querySelector("#humidity").innerHTML = `${humidity}%`;
   document.querySelector("#wind").innerHTML = `${wind}`;
