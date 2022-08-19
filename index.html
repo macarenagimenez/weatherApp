@@ -31,26 +31,30 @@
     <div class="container">
       <div class="card">
         <div class="header">
-          <form >
-            <input type="text" placeholder="London" >
+          <form id="inputCity">
+            <input type="text" placeholder="London" id="valueCity" >
           <!--<h2 class="city">London |</h2>-->
           
-          <p class="date">Monday 11:45</p>
+          <p class="date" id="date">Monday 11:45</p>
           </form>
         </div>
         <div class="weather-description row">
-          <span class="col-6 description position-absolute bottom-0 start-0">
-            ☁ Clear</span
+          <img id="icon" src="http://openweathermap.org/img/wn/10d@2x.png" >
+          <span class="col-6 description position-absolute bottom-0 start-0" id="description">
+           </span
           >
           <ul class="col-6 humidity-windy position-absolute bottom-0 end-0">
-            <li><i class="fa-solid fa-wind"></i> :10%</li>
-            <li><i class="fa-solid fa-cloud-rain"></i> :20km/h</li>
+            <li><i class="fa-solid fa-wind"></i>:<span id="wind"></span>km/h</li>
+            <li><i class="fa-solid fa-cloud-rain" ></i>: <span id="humidity"></span> </li>
           </ul>
         </div>
         <hr />
         <div class="current-temperature">
           <h1 id="valueTemp">23</h1>
-          <span class="units"> C | F </span>
+          <span class="units">C | F
+
+            
+          </span>
         </div>
         <hr />
         <!--
