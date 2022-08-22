@@ -1,6 +1,3 @@
-ul {
-  list-style-type: none;
-}
 hr {
   margin: 0;
   border-top: 2px solid #707070;
@@ -20,11 +17,11 @@ input:hover {
   cursor: pointer;
 }
 input:focus-visible {
-  outline-color: #f5e1da;
+  outline-color: #085f63;
 }
 
 .container {
-  max-width: 500px;
+  max-width: 550px;
   margin-top: 50px;
   font-family: "Nunito", sans-serif;
   color: #707070;
@@ -48,7 +45,7 @@ input:focus-visible {
   border-radius: 40px;
   background-color: #f1f1f1;
   margin-top: 20px;
-  padding: 60px;
+  padding: 40px;
 }
 
 .icon {
@@ -113,20 +110,35 @@ i {
 }
 
 .week-days {
+  background: #f1f1f1;
   text-align: center;
-  border: 1px solid #707070;
+  border: 1px solid #f1f1f1;
   border-radius: 20px;
   padding-top: 10px;
+  padding-bottom: 10px;
   margin: 10px;
-  font-size: 10px;
   transition: all 200ms ease-out;
 }
 
 .week-days:hover {
-  border: 1px solid #707070;
-  background: #707070;
+  border: 1px solid #085f63;
+  background: #085f63;
   color: white;
   cursor: pointer;
+}
+.weather-forecaste-date {
+  font-size: 12px;
+}
+.weather-forecast-temperature {
+  font-size: 12px;
+}
+.weather-forecast-temperature-max {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.week-days .icon {
+  width: 50px;
 }
 
 .developer {

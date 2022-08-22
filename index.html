@@ -23,86 +23,136 @@
       src="https://kit.fontawesome.com/c1c02b3758.js"
       crossorigin="anonymous"
     ></script>
-   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
- </head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
 
   <body>
     <div class="container">
       <div class="card">
         <div class="header">
           <form id="inputCity">
-            <input type="type" placeholder="Type your city!" id="valueCity" autofocus="on" autocomplete="off"  >
-          <p class="name" id="name"></p>
-          <p class="date" id="date">Monday 11:45</p>
-         </form>
-              </div>
+            <input
+              type="type"
+              placeholder="Type your city!"
+              id="valueCity"
+              autofocus="on"
+              autocomplete="off"
+            />
+            <p class="name" id="name"></p>
+            <p class="date" id="date">Monday 11:45</p>
+          </form>
+        </div>
 
         <div class="weather-description row">
-          <div class="col-4 ">
-           <img  class="icon" id="icon" src="http://openweathermap.org/img/wn/10d@2x.png" >
-           <div  id="description" class="description"></div>
+          <div class="col-4">
+            <img
+              class="icon"
+              id="icon"
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+            />
+            <div id="description" class="description"></div>
           </div>
           <div class="col-4 wind">
-            <i class="fa-solid fa-wind "></i>
-            <br>
+            <i class="fa-solid fa-wind"></i>
+            <br />
             <div class="wind-speed">
-            <span id="wind"  ></span>
-            <span>km/h</span>  
+              <span id="wind"></span>
+              <span>km/h</span>
             </div>
           </div>
 
           <div class="col-4 humidity">
-          <i class="fa-solid fa-cloud-rain"></i>
-          <br>
-          <div class="humidity-text">
-            <span id="humidity" ></span>
-            <span></span>  
+            <i class="fa-solid fa-cloud-rain"></i>
+            <br />
+            <div class="humidity-text">
+              <span id="humidity"></span>
+              <span></span>
             </div>
           </div>
-        
         </div>
-
 
         <hr />
         <div class="current-temperature">
-          <h1 id="valueTemp"></h1> 
-          <div  class="units">
-            <a href="#"  id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a>
-          </div>         
-         </div>
-        
-        <!--
-        <div class="forecast row">
-          <div class="week-days col">
-            <p>mon</p>
-            <p>☀</p>
-            <p>25°-15°</p>
-          </div>
-          <div class="week-days col">
-            <p>mon</p>
-            <p>☀</p>
-            <p>25°-15°</p>
-          </div>
-          <div class="week-days col">
-            <p>mon</p>
-            <p>☀</p>
-            <p>25°-15°</p>
-          </div>
-          <div class="week-days col">
-            <p>mon</p>
-            <p>☀</p>
-            <p>25°-15°</p>
-          </div>
-          <div class="week-days col">
-            <p>mon</p>
-            <p>☀</p>
-            <p>25°-15°</p>
+          <h1 id="valueTemp"></h1>
+          <div class="units">
+            <a href="#" id="celsius-link" class="active">°C</a> |
+            <a href="#" id="fahrenheit-link">°F</a>
           </div>
         </div>
-      </div>-->
-      <p class="developer">Open-source by <a href="https://github.com/macarenagimenez/weatherApp" target="_blank">
-        Macu Gimenez</a></p>
+
+        <div class="forecast row">
+          <div class="week-days col-2">
+            <p class="weather-forecaste-date">mon</p>
+            <img
+              class="icon"
+              id="icon"
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+            />
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">25°</span>
+              <span class="weather-forecast-temperature-min">15°</span>
+            </div>
+          </div>
+          <!--
+          <div class="week-days col">
+            <p class="weather-forecaste-date">mon</p>
+            <img
+              class="icon"
+              id="icon"
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+            />
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">25°</span>
+              <span class="weather-forecast-temperature-min">15°</span>
+            </div>
+          </div>
+
+          <div class="week-days col">
+            <p class="weather-forecaste-date">mon</p>
+            <img
+              class="icon"
+              id="icon"
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+            />
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">25°</span>
+              <span class="weather-forecast-temperature-min">15°</span>
+            </div>
+          </div>
+
+          <div class="week-days col">
+            <p class="weather-forecaste-date">mon</p>
+            <img
+              class="icon"
+              id="icon"
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+            />
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">25°</span>
+              <span class="weather-forecast-temperature-min">15°</span>
+            </div>
+          </div>
+
+          <div class="week-days col">
+            <p class="weather-forecaste-date">mon</p>
+            <img
+              class="icon"
+              id="icon"
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+            />
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">25°</span>
+              <span class="weather-forecast-temperature-min">15°</span>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <p class="developer">
+        Open-source by
+        <a href="https://github.com/macarenagimenez/weatherApp" target="_blank">
+          Macu Gimenez</a
+        >
+      </p>
     </div>
   </body>
 
