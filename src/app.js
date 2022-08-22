@@ -23,6 +23,35 @@ function date() {
   currentTime.innerHTML = `${day}, ${hours}:${minutes}hr.`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+           <div class="week-days col-2">
+              <p class="weather-forecaste-date">${day}</p>
+              <img
+                class="icon"
+                id="icon"
+                src="https://openweathermap.org/img/wn/10d@2x.png"
+              />
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-temperature-max">25°</span>
+                <span class="weather-forecast-temperature-min">15°</span>
+              </div>
+            </div>
+          `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function searchCityWeather(city) {
   let apiKey = "d9fa039441ee765f866a01bc611a5d61";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -54,7 +83,7 @@ function displayWeather(response) {
   document.querySelector("#wind").innerHTML = `${wind}`;
   document
     .querySelector("#icon")
-    .setAttribute("src", `http://openweathermap.org/img/wn/${icon}@2x.png`);
+    .setAttribute("src", `https://openweathermap.org/img/wn/${icon}@2x.png`);
 }
 
 function displayFahrenheitTemperature(event) {
@@ -76,6 +105,7 @@ function displayCelsiusTemperature(event) {
 
 date();
 searchCityWeather("London");
+displayForecast();
 
 let celsiusTemperature = null;
 
