@@ -98,9 +98,6 @@ function displayWeather(response) {
   let wind = response.data.wind.speed;
   let icon = response.data.weather[0].icon;
   let name = response.data.name;
-  console.log(response);
-
-  celsiusTemperature = response.data.main.temp;
 
   document.querySelector("#valueTemp").innerHTML = `${temperature}`;
   document.querySelector("#name").innerHTML = `${name}`;
@@ -116,8 +113,6 @@ function displayWeather(response) {
 
 date();
 searchCityWeather("London");
-
-let celsiusTemperature = null;
 
 let form = document.querySelector("#inputCity");
 form.addEventListener("submit", searchCity);
